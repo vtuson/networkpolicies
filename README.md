@@ -12,3 +12,5 @@ kubectl -n test exec busybox2 -- curl website.default
 
 k apply -f netpol-deny
 
+kubectl label po busybox role=client
+kubectl label po website role=website
